@@ -71,6 +71,9 @@ nav .navigation ul li a {
 nav .navigation ul li a:hover {
   color: #fdc93b;
 }
+nav .navigation ul li a.active {
+  color: #fdc93b;
+}
 
 /* !home section  */
 
@@ -78,7 +81,7 @@ nav .navigation ul li a:hover {
   background-image: linear-gradient(rgb(42 42 43 / 30%), rgb(48 48 48 / 70%)),
     url("assets/school_building.jpg");
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -210,10 +213,15 @@ nav .navigation ul li a:hover {
   display: inline-block;
   position: absolute;
   line-height: 50px;
-  right: 15px;
-  bottom: 65px;
+  right: 10px;
+  bottom: 95px;
   border-radius: 50%;
   padding: 5px;
+}
+
+#courses .card h4 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* !registration */
@@ -319,12 +327,6 @@ nav .navigation ul li a:hover {
 #experts .expert-box .profile {
   background-color: #fafaf1;
   padding: 30px 10px;
-}
-
-#experts .expert-box .profile img {
-  width: 70%;
-  border-radius: 50%;
-  border: 10px solid rgba(240, 233, 233, 0.874);
 }
 
 #experts .expert-box .profile .links {
@@ -439,6 +441,263 @@ footer .copyright .links i:hover {
   background-color: #fdc93b;
 }
 
+/* !about page  */
+
+#about-home {
+  background-image: linear-gradient(rgb(42 42 43 / 30%), rgb(48 48 48 / 70%)),
+    url("assets/back.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#about-home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+#about-container {
+  display: flex;
+  align-items: center;
+  padding: 8vw 8vw 2vw 8vw;
+}
+#about-container .about-img {
+  width: 60%;
+}
+#about-container .about-img img {
+  width: 100%;
+  padding-right: 60px;
+}
+#about-container .about-text {
+  width: 40%;
+}
+#about-container .about-text h2 {
+  color: #29303b;
+  padding-bottom: 15px;
+}
+#about-container .about-text p {
+  color: #686f7a;
+  font-weight: 300;
+}
+#about-container .about-text .about-fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#about-container .about-text .about-fe img {
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+#about-container .about-text .about-fe .fe-text {
+  width: 90%;
+}
+#about-container .about-text .about-fe .fe-text h5 {
+  font-size: 16px;
+  color: #29303b;
+}
+
+#trust {
+  text-align: center;
+  padding: 8vw;
+}
+#trust .trust-img {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+#trust .trust-img img {
+  width: 90px;
+  height: auto;
+}
+
+/* !blog page */
+#blog-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8vw;
+}
+#blog-container .blogs {
+  width: 60%;
+}
+#blog-container .blogs img {
+  width: 100%;
+  border-radius: 19px;
+}
+
+#blog-container .blogs .post {
+  padding-bottom: 60px;
+}
+
+#blog-container .blogs .post h3 {
+  color: #29303b;
+  padding: 15px 0 10px 0;
+}
+#blog-container .blogs .post p {
+  color: #757373;
+  padding-bottom: 20px;
+}
+#blog-container .blogs .post a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#blog-container .cate {
+  width: 30%;
+}
+#blog-container .cate h2 {
+  padding-bottom: 7px;
+}
+#blog-container .cate a {
+  text-decoration: none;
+  color: #757373;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+#blog-container .blogPost {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#blog-container .blogPost {
+  text-align: justify;
+}
+#blog-container .blogPost p {
+  padding-bottom: 60px !important;
+}
+
+/* !course-inner */
+#course-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8vw;
+}
+#course-inner h3 {
+  padding: 35px 0 25px 0;
+  color: #29303b;
+}
+#course-inner p {
+  color: #64626e;
+}
+#course-inner hr {
+  height: 1px;
+  margin-top: 40px;
+  background-color: rgba(236, 226, 229, 0.5);
+}
+
+#course-inner .overview {
+  width: 70%;
+}
+#course-inner .overview .course-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+#course-inner .overview .course-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#course-inner .overview .course-head .c-name {
+  width: 70%;
+}
+#course-inner .overview .course-head .c-name h2 {
+  color: #293038;
+}
+
+#course-inner .overview .course-head .c-name .star {
+  margin: 6px 0;
+}
+#course-inner .overview .course-head .c-name .star i {
+  color: #fdc93b;
+  font-size: 0.9rem;
+}
+#course-inner .overview .course-head p {
+  font-size: 15px;
+}
+#course-inner .overview .course-head span {
+  padding: 16px 22px;
+  border-radius: 5px;
+  color: #5838fc;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: rgba(88, 56, 252, 0.1);
+}
+#course-inner .learn p {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+#course-inner .learn p i {
+  color: #654ce4;
+  font-weight: 700;
+  margin-right: 20px;
+}
+#course-inner .tutor {
+  display: flex;
+}
+#course-inner .tutor img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#course-inner .tutor h5 {
+  font-size: 15px;
+}
+#course-inner .Enroll {
+  width: 300px;
+  padding: 0 30px 30px 30px;
+  border-radius: 11px;
+  box-shadow: 0px 20px 40px 0 rgb(11 2 55/ 20%);
+}
+#course-inner .Enroll h3 {
+  padding-bottom: 10px;
+}
+#course-inner .Enroll p {
+  font-size: 15px;
+  color: #64626e;
+  margin: 15px 0;
+}
+#course-inner .Enroll p i {
+  color: #654ce4;
+  font-size: 14;
+  margin-right: 18px;
+}
+#course-inner .Enroll .enroll-btn {
+  padding: 25px 0 20px 0;
+  margin: auto;
+  text-align: center;
+}
+#course-inner .Enroll .enroll-btn a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 13px 45px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(50, 50, 136);
+}
+
 @media (max-width: 900px) {
   nav {
     padding: 15px 20px;
@@ -516,6 +775,48 @@ footer .copyright .links i:hover {
   footer .copyright .links {
     margin-top: 15px;
   }
+
+  /* !about */
+  #about-container {
+    padding: 8vw 4vw 2vw 4vw;
+  }
+  #about-container .about-img {
+    padding-right: 30px;
+  }
+  #trust .trust-img img {
+    width: 70px;
+    height: auto;
+  }
+
+  /* !blog  */
+  #blog-container {
+    padding: 8vw 4vw;
+  }
+  #blog-container .blogPost {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #blog-container .blogPost img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  /*! course-content */
+  #course-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8vw 4vw;
+  }
+  #course-inner .overview {
+    width: 100%;
+  }
+  #course-inner .overview .course-img {
+    width: 100%;
+    height: 100%;
+  }
+  #course-inner .Enroll {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -533,5 +834,64 @@ footer .copyright .links i:hover {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  /* !about */
+  #about-container {
+    flex-direction: column-reverse;
+  }
+  #about-container .about-img {
+    width: 100%;
+    padding-right: 0px;
+  }
+  #about-container .about-text {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #trust .trust-img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #trust .trust-img img {
+    width: 60px;
+    margin: 10px 15px;
+    height: auto;
+  }
+
+  /* !blog */
+  #blog-container {
+    flex-direction: column;
+  }
+  #blog-container .blogs {
+    width: 100%;
+  }
+  #blog-container .cate {
+    width: 100%;
+  }
+
+  #blog-container .blogPost {
+    width: 100%;
+    margin-top: 70px;
+  }
+  #blog-container .blogPost img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  /* !course-content */
+  #course-inner .overview .course-head .c-name {
+    width: 70%;
+  }
+  #course-inner .overview .course-head .c-name h2 {
+    font-size: 22px;
+  }
+  #course-inner .overview .course-head span {
+    font-size: 22px;
+  }
+  #course-inner .Enroll {
+    width: 100%;
   }
 }

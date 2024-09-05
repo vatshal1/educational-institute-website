@@ -8,3 +8,8 @@ menu_btn.addEventListener("click", () => {
 menu_close.addEventListener("click", () => {
   ul.classList.remove("active");
 });
+
+const course_content = document.querySelector(".card");
+course_content.addEventListener("click", () => {
+  window.location.href = "course-content.html";
+});
